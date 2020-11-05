@@ -1,0 +1,126 @@
+/*
+Footer style
+*/
+.footer-copyright{
+    padding:30px 0;
+     background: #222;
+     text-align:center;
+    color: rgba(255,255,255,0.8);
+}
+.footer{
+    padding-top:50px;
+    position: relative;
+    background: #333;
+    color: rgba(255,255,255,0.8);
+    .newsletter-form-footer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    h3{
+        color: #fff;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        position: relative;
+        font-weight:600;
+        font-size:18px;
+        text-transform:capitalize;
+        &:after{
+            content: "";
+            width: 30px;
+            height: 2px;
+            background: $primary-color;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    p{
+            margin-bottom:10px;
+            a{
+                color: #fff;
+            } 
+            small{
+                font-size: 13px;
+            }
+    }
+    hr{
+        border-top-color: rgba(255,355,255,0.2);
+    }
+}
+.f-links{
+    li{
+        padding:5px 0;
+        a{
+            display: block;
+            position: relative;
+            color: rgba(255,255,255,0.8);
+            padding-left:15px;
+            &:after {
+                position: absolute;
+                left: 0;
+                top: 0px;
+                content: "\f105";
+                font-family: "FontAwesome";
+            }
+            &:hover{
+                color: rgba(255,255,255,1);
+            }
+        }
+    }
+}
+.f-social{
+    margin-top:15px;
+    li{
+        padding:0px;
+        a{
+            font-size: 14px;
+            text-align:center;
+            width:36px;
+            height:36px;
+            line-height:36px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            background: rgba(0,0,0,0.2);
+            display: block;
+           color: rgba(255,255,255,0.8);
+           &:hover{
+                background-color:$primary-color;
+            }
+        }
+    }
+}
+.newsletter-card{
+    padding: 10px 15px;
+    background: #fff;
+    position:relative;
+    border-radius:5px;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+    .newsletter-submit{
+        position: absolute;
+        right:15px;
+        bottom: 8px;
+        border:0px;
+        background: transparent;
+        color: #333;
+        font-weight: 700;
+        font-size: 12px;
+        color: $primary-color;
+    }
+    h4{
+       border-bottom: 1px solid #eee;
+       padding-bottom: 10px;
+       font-weight: 400;
+    }
+    .form-control{
+        border: 0px;
+        box-shadow: none;
+        padding-left:0px;
+    }
+}
+.newsletter-form{
+    h2{
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Finder - Listing</title>
+
+        <!-- plugins -->
+        <link href="css/bundle.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+<!-- Preloader -->
+<div id="preloader"></div>
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home 1</a></li>
+                                <li><a href="index-2.html">Home 2</a></li>
+                                <li><a href="index-3.html">Home 3</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Listing <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="add-listing.html">Add Listing</a></li>
+                                <li><a href="listing-grid.html">Listing Grid fullwidth</a></li>
+                                <li><a href="listing-grid-sidebar.html">Listing Grid + Sidebar</a></li>
+                                <li><a href="listing-map.html">With Map</a></li>
+                                <li><a href="listing-row.html">Row full width</a></li>
+                                <li><a href="listing-row-sidebar.html">Row + Sidebar</a></li>
+                                <li><a href="single-listing.html">Listing Detail</a></li>
+                                <li><a href="agents.html">Agent Listing</a></li>
+                                <li><a href="single-agent.html">Agent Detail</a></li>
+                                <li><a href="profile.html">My Profile</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown mega-li">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations <span class="caret"></span></a>
+                            <ul class="dropdown-menu mega-dropdown-menu">
+                                <li>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-3">
+                                                <h5>New York</h5>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Brooklyn</a></li>
+                                                    <li><a href="#">Manhattan</a></li>
+                                                    <li><a href="#">Queens</a></li>
+                                                    <li><a href="#">Bronx</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <h5>London</h5>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Croydon</a></li>
+                                                    <li><a href="#">Epsom</a></li>
+                                                    <li><a href="#">Camberley</a></li>
+                                                    <li><a href="#">Bracknell</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <h5>Paris</h5>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Grenelle</a></li>
+                                                    <li><a href="#">Luxembourg</a></li>
+                                                    <li><a href="#">Place De La Bastille</a></li>
+                                                    <li><a href="#">Grand Palais</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <h5>Madrid</h5>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Centro</a></li>
+                                                    <li><a href="#">Retiro</a></li>
+                                                    <li><a href="#">Chamberi</a></li>
+                                                    <li><a href="#">Dos De Mayo Plaza</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="how-work.html">How it work</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                                <li><a href="error.html">Error 404</a></li>
+                                <li class="divider"></li>
+                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="grid-system.html">Grid system</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="button-navbar"><a href="add-listing.html"><i class="fa fa-plus"></i> Add Listing</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+        <div class="page-bread mb70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Listing Grid + Sidebar</h3>
+                    </div>
+                    <div class="col-sm-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mb30">
+                    <div class="clearfix mb20">
+                        <div class="pull-right">
+                            <div class="form-group">
+                                <select class="form-control" title="Sorting">                                       
+                                    <option>Popular</option>
+                                    <option>Low Price</option>
+                                    <option>Best Rating</option>
+                                    <option>High price</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h3 class="font300">40 Results Found</h3>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img1.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Drinks</a>
+                                    <h3><a href="#">Tasty Coffee</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img2.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Restaurant</a>
+                                    <h3><a href="#">Italian Food</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img3.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Vacation</a>
+                                    <h3><a href="#">Beach Life</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                   
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img5.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Bars</a>
+                                    <h3><a href="#">Soft Drink</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img6.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Swimming</a>
+                                    <h3><a href="#">Swimming Pools</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img8.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Shop</a>
+                                    <h3><a href="#">Cloth Stores</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img1.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Drinks</a>
+                                    <h3><a href="#">Tasty Coffee</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img3.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Vacation</a>
+                                    <h3><a href="#">Beach Life</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img4.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Property</a>
+                                    <h3><a href="#">House Rent</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row">
+                  
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img6.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Swimming</a>
+                                    <h3><a href="#">Swimming Pools</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img7.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Electronics</a>
+                                    <h3><a href="#">Mobile Stores</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img8.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Shop</a>
+                                    <h3><a href="#">Cloth Stores</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                     <div class="row">
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img1.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Drinks</a>
+                                    <h3><a href="#">Tasty Coffee</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img2.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Restaurant</a>
+                                    <h3><a href="#">Italian Food</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star-half-empty text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 mb30">
+                        <div class="card-overlay">
+                            <img src="images/img3.jpg" class="img-responsive" alt="">
+                            <div class="card-hover">
+                                <div class="card-content">
+                                    <a class="label label-primary" href="#">Vacation</a>
+                                    <h3><a href="#">Beach Life</a></h3>
+                                    <ul class="list-inline mb0 rating-list">
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                        <li><i class="fa fa-star text-warning"></i></li>
+                                    </ul>
+                                </div><!--/card-content-->
+                                <div class="card-icons">
+                                    <a href="#" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" title="View Detail"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                   
+                </div>
+                    <div class="text-right mb30">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!--/col-->
+                <div class="col-md-3 mb60">
+                    <h4 class="left-title mb20">Search Filter</h4>
+                    <div class="mb40">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Keywords...">
+                            </div>
+                            <div class="form-group mb15">
+                                <select class="form-control" title="Location">                                       
+                                    <option>Paris</option>
+                                    <option>London</option>
+                                    <option>New York</option>
+                                    <option>Tokyo</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" title="Category">                                       
+                                    <option>Restaurants</option>
+                                    <option>Jobs</option>
+                                    <option>Property</option>
+                                    <option>Automotive</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Min Price...">
+                            </div>
+                            <input type="submit" class="btn btn-dark btn-lg btn-block" value="Search">
+                        </form>
+                    </div>
+                    <h4 class="left-title mb20">Recent Listings</h4>
+                    <ul  class="list-unstyled recent-item-card mb40">
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img src="images/img1.jpg" alt="" class="img-responsive" width="90">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4><a href="#">Doloremque laudantium, totam rem aperiam</a></h4>
+                                <em>New York / Coffee</em>
+                                <span class="text-primary">$140/Person</span>
+                            </div>
+                        </li><!--/li-->
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img src="images/img2.jpg" alt="" class="img-responsive" width="90">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4><a href="#">Doloremque laudantium, totam rem aperiam</a></h4>
+                                <em>New York / Coffee</em>
+                                <span class="text-primary">$140/Person</span>
+                            </div>
+                        </li><!--/li-->
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img src="images/img3.jpg" alt="" class="img-responsive" width="90">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4><a href="#">Doloremque laudantium, totam rem aperiam</a></h4>
+                                <em>New York / Coffee</em>
+                                <span class="text-primary">$140/Person</span>
+                            </div>
+                        </li><!--/li-->
+                    </ul><!--/ul-->
+                    <h4 class="left-title mb20">Popular Tags</h4>
+                    <ul class="list-inline tags-list">
+                        <li><a href="#"><i class="fa fa-tag"></i> Shop</a></li>
+                        <li><a href="#"><i class="fa fa-tag"></i> Beer</a></li>
+                        <li><a href="#"><i class="fa fa-tag"></i> Beach</a></li>
+                        <li><a href="#"><i class="fa fa-tag"></i> Cinemas</a></li>
+                        <li><a href="#"><i class="fa fa-tag"></i> Hotel</a></li>
+                        <li><a href="#"><i class="fa fa-tag"></i> Dinner</a></li>
+                        <li><a href="#"><i class="fa fa-tag"></i> Lunch</a></li>
+                        <li><a href="#"><i class="fa fa-tag"></i> Taxi</a></li>
+                        <li><a href="#"><i class="fa fa-tag"></i> Bar & pubs</a></li>
+                        <li><a href="#"><i class="fa fa-tag"></i> Games</a></li>
+                        <li><a href="#"><i class="fa fa-tag"></i> Tickets</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <!--footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb30">
+                        <h3>About Us</h3>
+                        <p>
+                            Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </p>
+                        <ul class="list-inline f-social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                       
+                    </div>
+                    <div class="col-md-4 mb30">
+                        <h3>Support Information</h3>
+                        <p>
+                            <small>Address:</small><br>
+                            124, Lorem Street, New York, USA
+                        </p>
+                        <p>
+                            <small>Call Us:</small><br>
+                            <a href="#">+01 1800-234-45678</a>
+                        </p>
+                        <p>
+                            <small>Mail Us:</small><br>
+                            <a href="#">support@finder.com</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb30">
+                        <h3>useful links</h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="f-links list-unstyled">
+                                    <li><a href="#">Restaurants</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Deal & Coupons</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Restaurants</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="f-links list-unstyled">
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Cinemas</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Privacy & policy</a></li>
+                                    <li><a href="#">T & C</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    &copy; Copyright 2017. All Right Reserved.
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery-->
+
+        <script src="js/plugins/all.js"></script>
+        <script src="js/finder.custom.js"></script>      
+    </body>
+</html>

@@ -1,0 +1,43 @@
+/*
+Navbar Style
+*/
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 15px 12px;
+}
+.navbar-nav>li>a{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.navbar-default{
+    border: 0px;
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    padding:5px 0;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background: transparent;
+    color: $primary-color;
+}
+.navbar-nav>li.button-navbar a{
+    background: $primary-color;
+    color: #fff;
+    padding:4px 12px;
+    border-radius: 2px;
+    margin-top: 11px;
+    margin-right: 15px;
+}
+.navbar-default .navbar-nav>li.button-navbar a:hover{
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    color: #fff;
+    background-color: $primary-color;
+}
+
+.navbar-default .navbar-nav>li>a{
+    &:hover{
+       background: transparent;
+    color: $primary-color; 
+    }
+}

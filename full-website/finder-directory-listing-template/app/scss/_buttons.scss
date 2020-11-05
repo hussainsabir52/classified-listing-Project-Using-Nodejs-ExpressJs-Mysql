@@ -1,0 +1,150 @@
+/*
+Buttons style.
+*/
+.btn{
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font-weight: 400;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    font-size:14px;
+    
+    &:focus{
+        outline: 0!important;
+    }
+    &.btn-rounded{
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+    }
+    i{
+        margin-right:5px;
+    }
+}
+.btn-lg{
+    padding: 12px 25px;
+    font-weight: 400;
+    font-size: 13px;
+}
+.btn-primary{
+    background: $primary-color;
+    border-color: $primary-color;
+    &:focus{
+        background: $primary-color;
+    border-color: $primary-color;
+    color: #fff;
+    }
+    &:hover{
+        background: $primary-color;
+    border-color: $primary-color;
+    color: #fff;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+    }
+}
+.btn-dark{
+    background: #333;
+    border-color: #333;
+    color:#fff;
+    &:focus{
+        background: #333;
+    border-color: #333;
+    color: #fff;
+    }
+    &:hover{
+        background: #333;
+    border-color: #333;
+    color: #fff;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+    }
+}
+.btn-danger{
+    background: $danger-color;
+    border-color: $danger-color;
+    &:focus{
+        background: $danger-color;
+    border-color: $danger-color;
+    color: #fff;
+    }
+    &:hover{
+        background: $danger-color;
+    border-color: $danger-color;
+    color: #fff;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+    }
+}
+.btn-warning{
+    background: $warning-color;
+    border-color: $warning-color;
+    &:focus{
+        background: $warning-color;
+    border-color: $warning-color;
+    color: #fff;
+    }
+    &:hover{
+        background: $warning-color;
+    border-color: $warning-color;
+    color: #fff;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+    }
+}
+.btn.btn-social{
+    position: relative;
+    padding: 0px 30px;
+    height: 45px;
+    line-height:45px;
+    text-align:left;
+    padding-left:60px;
+    margin-top:5px;
+    text-transform:capitalize;
+    border-bottom:3px solid rgba(0,0,0,0.2);
+    &:hover{
+         opacity:0.9;
+    }
+    i{
+        position: absolute;
+        width: 40px;
+        height: 100%;
+        border-right: 1px solid rgba(255,255,255,0.1);
+        line-height: 45px;
+        top:0;
+        left:0;
+        text-align: center;
+        font-size: 16px;
+    }
+    &.btn-facebook{
+        background: #3b5998;
+        color:#fff;
+    }
+    &.btn-twitter{
+        background: #1da1f2;
+        color:#fff;
+    }
+     &.btn-gplus{
+        background: #d34836;
+        color:#fff;
+    }
+}
+.btn-default{
+    background: #f5f5f5;
+    border-color: #f5f5f5;
+    &:hover{
+        background: #ddd;
+        border-color:#ddd;
+    }
+}
+.btn-white{
+    background: #fff;
+    color: #333;
+    &:focus{
+      background: #fff;
+    color: #333;   
+    }
+    &:hover{
+        color: #fff;
+        background: $primary-color;
+    }
+}
+.buttons{
+    a{
+        margin:3px;
+    }
+}

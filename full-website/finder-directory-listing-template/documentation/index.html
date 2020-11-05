@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Finder Docs</title>
+
+    <!-- Bootstrap -->
+    <link href="../app/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <aside class="left-nav">
+          <div class="logo">
+              <a href="#"><img src="../app/images/logo.png" alt=""></a>
+          </div>
+          <ul class="list-unstyled">
+              <li><a href="#intro">Intro</a></li>
+              <li><a href="#base">Basics</a></li>
+              <li><a href="#customize">Customization</a></li>
+              <li><a href="#credits">Credits</a></li>
+              <li><a href="#support">Support</a></li>
+          </ul>
+      </aside>
+      <main class="main-content">
+          <div id="intro">
+              <h2>Welcome to finder</h2>
+              <p>
+                  First, thanks for choosing finder template. Finder template is specially  designed for directory and listing webites. It contains all files required for creating successful directory website. Using well known technologies like Bootstrap, SASS and Gulp make from template developer friendly product. 
+              </p>
+              <p><strong>Version:</strong> v1.0</p>
+              <p><strong>Last Update:</strong> N/A</p>
+              <p><strong>Support:</strong> mylifedesign143@gmail.com</p>
+              <div style="height: 40px;"></div>
+          </div>
+          <div id="base">
+              <h2>Template Basics</h2>
+              <h5>Files Structure:</h5>
+              <pre><code>
+Finder (Main Folder)/
+├── App (Template files folder)/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│   └── scss/
+│   └── bower_components/
+│   └── index.html/
+│   └── index-2.html/
+│   └── add-listing.html/
+│   └── contact.html/
+│   └── blog.html/
+│   └── about.html/
+│   └── agents.html/
+│   └── listing-detail.html/
+│   └── login.html/
+│   └── -----.html/
+├── Documentation/
+├── node_modules/
+├── package.json/
+└── gulpfile.js/
+</code>
+              </pre>
+          </div>
+           <div style="height: 40px;"></div>
+          <div id="customize">
+              <h2>Template customization</h2>
+              <div style="height: 30px;"></div>
+              <h4>1.How do I open the template?</h4>
+              <p>
+                  The template is 100% ready to use, with no compilation needed. Just unzip, go to the html folder and open the <code>index.html</code> file in your browser using a development server
+              </p>
+              <div style="height: 30px;"></div>
+              <h4>2.How do I install/uninstall a dependency with Bower?</h4>
+              <p>
+                  Run bower install <span><</span>dependency-name> --save. After this then you should add the installed dependencies to the <code>.html</code> files.
+              </p>
+              <div style="height: 30px;"></div>
+              <h4>3.How do I edit the style.css file</h4>
+              <p>
+                  you can simply open the <code>style.css</code> file into editor and change fonts colors etc.
+              </p>
+              <div style="height: 30px;"></div>
+              <h4>3.How do I edit the <code>sass</code> files</h4>
+              <p>
+                  First you need the <code>gulpjs</code> setup for compile the sass files into css
+                  <br>
+                  Here the simple and easy way to learn gulp
+                  <br>
+                  <a href='https://css-tricks.com/gulp-for-beginners/' target="_blank">https://css-tricks.com/gulp-for-beginners/</a>
+              </p>
+               <div style="height: 30px;"></div>
+              <h4>4.How do I edit the <code>email id</code> to contact form</h4>
+              <p>
+                  First make sure your website is runing using online server, contact form is working with only online server
+                  <br>
+                  1 - Open the <code>finder/app/contact-form/process-contact.phph</code> file into editor
+                  <br>
+                  2 - find this line into above file - <code>$my_email = 'support@example.com';</code>
+                  <br>
+                3 - Place your email id and it will work
+              </p>
+          </div>
+          <div style="height: 40px;"></div>
+          <div id="credits">
+              <h2>Credits</h2>
+              <h4>Automated js and sass files <strong><a target="_blank" href="http://gulpjs.com/">Gulpjs</a></strong></h4>
+              <h4>Bootstrap 3.3.7 <strong> <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a></strong></h4>
+              <h4><strong> <a target="_blank" href="https://jquery.com/">Jquery</a></strong></h4>
+              <h4>Icons <strong> <a target="_blank" href="http://fontawesome.io/">Font-awesome</a></strong></h4>
+              <h4>Images <strong> <a target="_blank" href="https://unsplash.com/">Unsplash</a></strong></h4>
+              <h4>npm for gulp dependencies <strong><a target="_blank" href="https://www.npmjs.com/">Npmjs</a></strong></h4>
+              <h4>Carousel slider<strong> <a target="_blank" href="https://owlcarousel2.github.io/OwlCarousel2/">owl-carousel2</a></strong></h4>
+              <h4><strong> <a target="_blank" href="https://fonts.google.com/">Google quicksand Fonts</a></strong></h4>
+              <h4>File Uploads <strong><a target="_blank" href="http://www.dropzonejs.com/">Dropzone</a></strong></h4>
+          </div>
+          <div style="height: 40px;"></div>
+          <div id="support">
+              <h2>Need Support?</h2>
+              <p>
+                 Feel free to leave a message here - <a href='mailto:'>mylifedesign143@gmail.com</a>
+              </p>
+          </div>
+      </main>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../app/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+  $('.left-nav a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+        </script>
+  </body>
+</html>

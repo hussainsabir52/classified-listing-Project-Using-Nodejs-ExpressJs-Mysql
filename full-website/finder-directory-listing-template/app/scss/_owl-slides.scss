@@ -1,0 +1,50 @@
+/*
+Owl carousel slides
+*/
+.testimonial-card{
+.content {
+	position: relative;
+	background: #fff;
+	border: 2px solid #fff;
+        padding:20px 15px;
+        margin-bottom: 20px;
+}
+.content:after, .content:before {
+	top: 100%;
+	left: 28px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.content:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.content:before {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 13px;
+	margin-left: -13px;
+}
+.testimonial-author{
+    img{
+        width: 60px;
+        margin-right: 15px;
+    }
+    .author-meta{
+        overflow: hidden;
+    }
+}
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: $primary-color;
+}
+.owl-carousel.owl-theme.owl-places{
+    
+}

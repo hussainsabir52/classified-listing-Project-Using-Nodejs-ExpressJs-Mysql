@@ -1,0 +1,321 @@
+/*
+Card-overlays
+*/
+.card-overlay{
+    overflow: hidden;
+    position: relative;
+    .card-hover{
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(#000,0.2);
+          transition: all ease .35s;
+        -webkit-transition: all ease .35s;
+    }
+    .card-content{
+      
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        padding:20px 15px;
+        h3 {
+            font-weight: 400;
+            font-size: 18px;
+            margin:8px 0 5px;
+            a{          
+                color: #fff;            
+            }
+        }
+    }
+    &:hover{
+        .card-icons{
+            margin-right:0px;
+            opacity: 1;
+        }
+        .card-hover{
+            background: rgba(#000,0.7);
+        }
+    }
+}
+.card-icons{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    margin-right: -10px;
+    opacity:0;
+    transition: all ease .35s;
+    -webkit-transition: all ease .35s;
+    a{
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        display: block;
+        background: #fff;
+        margin-top: 5px;
+        &:hover{
+            background-color: $primary-color;
+            color:#fff;
+        }
+    }
+}
+
+.download-app-card{
+    position: relative;
+    background:url(../images/img-lg1.jpg) no-repeat center bottom;
+    background-attachment: fixed;
+    width:100%;
+    background-size: cover;
+    padding:40px 20px;
+     h1{
+        color:#fff;
+        font-weight: 300;
+    }
+    a{
+        display: inline-block;
+        margin: 4px;
+        &:hover{
+            opacity:0.8;
+        }
+    }
+}
+.icon-center-card{
+    text-align: center;
+    h3{
+        font-weight: 400;
+    }
+    p{
+        color: #000;
+        opacity:0.8;
+    }
+    i{
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        display: block;
+        font-size: 25px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        border: 2px solid $primary-color;
+        color:$primary-color;
+    }
+    a{
+        color: $primary-color;
+        position:relative;
+        padding-right:20px;
+        display:inline-block;
+        &:after {
+                position: absolute;
+                right: 0;
+                top: 0px;
+                content: "\f105";
+                font-family: "FontAwesome";
+            }
+            &:hover{
+                opacity:0.8;
+            }
+    }
+}
+
+.post-card{
+    position: relative;
+    overflow:hidden;
+    .post-content{
+        h4{
+            font-weight: 400;
+            font-size:20px;
+            a{
+                color: #000;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.event-card{
+    position: relative;
+    padding-left: 80px;
+    .date-icon{
+        position: absolute;
+        left: 0;
+        width: 60px;
+        top: 0;
+        text-align: center;
+         color: #fff;
+        font-size:40px;
+        line-height:40px;
+        border:1px solid rgba(255,255,255,0.2);
+        padding:5px 0;
+        span{
+            display: block;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+    h4{
+        a{
+            color: #fff;
+            font-weight: 400;
+        }
+    }
+    span{
+        color: #fff;
+        opacity: 0.5;
+    }
+    p{
+        color: #fff;
+        opacity: 0.8;
+    }
+    .more-link a{
+        position: relative;
+        display: inline-block;
+        padding-right: 15px;
+        color: #eee;
+         &:after {
+                position: absolute;
+                right: 0;
+                top: 0px;
+                content: "\f105";
+                font-family: "FontAwesome";
+            }
+            &:hover{
+                opacity:0.8;
+            }
+    }
+}
+
+/*pricing*/
+.price-card{
+    text-align: center;
+    border:1px solid #eee;
+    h4{
+        font-weight: 300;
+        margin:0;
+        border-bottom:1px solid #eee; 
+        padding: 20px 0;
+    }
+    h1{
+        font-weight: 300;
+        padding: 30px 0;
+        margin: 0;
+        border-bottom: 1px solid #eee;
+        sup,sub{
+            font-size: 13px;
+        }
+        sup{
+            vertical-align: top;
+            margin-top: 5px;
+            display: inline-block;
+        }
+    }
+    .price-button{
+        padding: 20px 0;
+    }
+    ul{
+        margin:0;
+        background:#fefefe;
+        li{
+            border-top: 1px dashed #eee;
+            padding: 9px 0;
+        }
+    }
+}
+.price-bottom{
+    padding: 20px 0;
+}
+
+/*login register*/
+.border-card{
+    padding: 30px 20px;
+    border: 1px solid #eee;
+}
+
+.icon-box{
+    i{
+     font-size: 40px;
+     margin-bottom: 20px;
+    }
+    h4{
+        text-transform: capitalize;
+    }
+}
+.team-card{
+    position: relative;
+    margin-bottom:10px;
+    .team-overlay{
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background-color:rgba(0,0,0,0.4);
+        transition:all 0.3s;
+       -webkit-transition:all 0.3s;
+       opacity:0;
+        ul{
+           position: absolute;
+        left:0px;
+        bottom:0px;
+        width:100%;
+       padding: 20px 15px;
+       margin:0;
+       -webkit-transition:all 0.3s;
+       transform:scale(0);
+       -webkit-transform:scale(0);
+       li{
+           a{
+               color:#fff;
+               font-size: 20px;
+               &:hover{
+                   color: $primary-color;
+               }
+           }
+       }
+        }
+    }
+    &:hover{
+        .team-overlay{
+         opacity: 1;
+         ul{
+              transform:scale(1);
+       -webkit-transform:scale(1);  
+         }
+        }
+    }
+}
+.team-content{
+    h3{
+        font-size: 20px;
+    }
+    em{
+        font-size: 12px;
+        color: #999;
+    }
+}
+
+.how-work-card{
+    i{
+        display:block;
+        margin:15px auto;
+        width: 180px;
+        height: 180px;
+        text-align: center;
+        line-height: 180px;
+        font-size: 90px;
+        background:#eee;
+        border-radius:50%;
+    }
+    h2{
+        padding-top:15px;
+    }
+}

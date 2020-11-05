@@ -1,0 +1,40 @@
+/*
+Dropdown Menu
+*/
+.dropdown-menu{
+    border: 0px;
+    padding:0px;
+    min-width:190px;
+    >li>a{
+        color:#999;
+        padding:7px 20px;
+        &:hover{
+            background: transparent;
+            color: $primary-color;
+        }
+    }
+}
+
+.dropdown.mega-li{
+    position: static;
+}
+.dropdown-menu.mega-dropdown-menu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    padding: 30px 15px;
+    h5{
+        font-weight: 500;
+    }
+    ul li a{
+        color: #999;
+        padding:7px 0px;
+        display:block;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
