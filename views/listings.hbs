@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{!-- <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> --}}
+              <title>Dashboard</title>
+
+                {{>linkrel}}
+        <link href="assets/css/ecaps.min.css" rel="stylesheet">
+
+       
+       </head>
+    <body>
+<!-- Preloader -->
+<div id="preloader"></div>
+<div class="page-container">
+       {{> dashboardSidebar headerOption}}
+       <div class="page-inner">
+       <div id="main-wrapper">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-white">
+                                <div class="panel-heading clearfix">
+                                    <h2 class="">Your Ads</h2>
+                                </div>
+                                <div class="panel-body">
+                                   <div class="table-responsive">
+                                    <table id="example" class="display table" style="width: 100%; cellspacing: 0;">
+                                        <thead>
+                                            <tr>
+                                                <th>Listing Title</th>
+                                                <th>Category</th>
+                                                <th>Location</th>
+                                                <th>Date</th>
+                                                <th>Price</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Listing Title</th>
+                                                <th>Category</th>
+                                                <th>Location</th>
+                                                <th>Date</th>
+                                                <th>Price</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            {{#each results}}
+                                            <tr>
+                                            <td>{{listing_name}}</td>
+                                            <td>{{category_name}}</td>
+                                            <td>{{location_name}}</td>
+                                            <td>{{listing_date}}</td>
+                                            <td>{{listing_price}}</td>
+                                            <td>
+              <a href="ad?id={{listing_id}}" type="button" class="btn btn-primary"><i class="fa fa-eye"></i></a>
+              <a type="button" class="btn btn-success"><i class="fa fa-edit"></i></a>
+            <a href="deletelisting?id={{listing_id}}" type="button" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+            </td>
+
+                                            </tr>
+                                            
+                                            {{/each}}
+                                        </tbody>
+                                       </table>  
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div><!-- Row -->
+                </div><!-- Main Wrapper -->
+                </div>
+      
+
+        </div>
+        
+        </div>
+     
+    </body>
+    
+</html>

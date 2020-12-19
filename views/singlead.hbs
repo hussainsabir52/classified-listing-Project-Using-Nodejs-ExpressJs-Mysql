@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+              <title>Ads - Listing</title>
+
+                {{>linkrel}}
+
+       
+       </head>
+    <body>
+<!-- Preloader -->
+<div id="preloader"></div>
+        <!-- Static navbar -->
+        {{>header headerOption}}
+        
+        <div class="page-bread mb70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        {{#each results}}
+                        <h3>{{listing_name}}</h3>
+                        {{/each}}
+                    </div>
+                    <div class="col-sm-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{#each results}}
+        <div class="row">
+        <div class="col-md-6 mb30">
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                  <img src="/pictures/{{listing_id}}/0.jpg" style="width:130%" onerror="this.style.display='none'">
+                  <img src="/pictures/{{listing_id}}/0.png" style="width:130%" onerror="this.style.display='none'">
+                
+                </div>
+              
+                <div class="mySlides1">
+                  <img src="/pictures/{{listing_id}}/1.jpg" style="width:130%" onerror="this.style.display='none'">
+                  <img src="/pictures/{{listing_id}}/1.png" style="width:130%" onerror="this.style.display='none'">
+                </div>
+              
+                <div class="mySlides1">
+                  <img src="/pictures/{{listing_id}}/2.jpg" style="width:130%" onerror="this.style.display='none'">
+                  <img src="/pictures/{{listing_id}}/2.png" style="width:130%" onerror="this.style.display='none'">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              </div>
+        </div>
+      
+
+        <script>
+            var slideIndex = [1,1];
+            var slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              var i;
+              var x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+
+    
+        <div class="col-md-6">
+        <div class="price_box">
+            <h2 class="prod-price">Rs.{{listing_price}}</h4>
+            <h6 class="prod-loc">{{location_name}}</h6>
+        </div>
+
+        <div class="seller_box">
+            <h2 class="seller-Des" style="color: #6283C5;">Seller Description</h4>
+            <a href="/profile?id={{user_id}}">
+            <div class="form-awsome">
+            <i class="fa fa-user-circle"></i>
+            <h4 class="seller-name">{{user_name}}</h4></div>
+            </a>
+            <label for="bid">Make An Offer</label>
+            <input type="number" name="" id="bid" placeholder="Bid" class="form-control">
+            <input type="button" value="Make  Offer">
+        </div>
+
+        </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="description-box">
+                    <h2 class="prod-des">Description:</h2>
+                    <h4 class="des">{{listing_desc}}</h4>
+                </div>
+                
+            </div>
+
+            {{!-- <div class="col-md-6">
+                <h4 class="mb20">Related Listings</h4>
+                <ul  class="list-unstyled recent-item-card mb40">
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="images/img1.jpg" alt="" class="img-responsive" width="90">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4><a href="#">Doloremque laudantium, totam rem aperiam</a></h4>
+                            <p>sindh</p>
+                        </div>
+                    </li><!--/li-->
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="images/img2.jpg" alt="" class="img-responsive" width="90">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4><a href="#">Doloremque laudantium, totam rem aperiam</a></h4>
+                            <p>sindh</p>
+                        </div>
+                    </li><!--/li-->
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="images/img3.jpg" alt="" class="img-responsive" width="90">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4><a href="#">Doloremque laudantium, totam rem aperiam</a></h4>
+                            <p>sindh</p>
+                        </div>
+                    </li><!--/li-->
+                </ul><!--/ul-->
+            </div> --}}
+        </div>
+
+{{/each}}
+       <!--footer-->
+        {{>footer}}
+        <!-- jQuery-->
+
+        {{!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8VMR9FooFZN64_qR8pu0jY0NJ8j_sicE&libraries=places&callback=initAutocomplete" --}}
+        {{!-- async defer></script> --}}
+        <script>
+            $.fn.digits = function(){ 
+    return this.each(function(){ 
+        $(this).text( $(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") ); 
+    })
+}
+
+    $("h2.prod-price").digits();
+
+        </script>
+     
+    </body>
+</html>

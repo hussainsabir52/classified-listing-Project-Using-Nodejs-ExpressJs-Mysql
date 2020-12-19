@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register- Classified Listing</title>
+
+        <!-- plugins -->
+        <link href="assets/css/bundle.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+<!-- Preloader -->
+<div id="preloader"></div>
+        <!-- Static navbar -->
+        {{!-- {{>header}} --}}
+               {{>header headerOption}}
+
+        <div class="page-bread mb70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Sign Up</h3>
+                    </div>
+                    <div class="col-sm-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb70">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="border-card">
+                        <h3 class="font300 mb0 text-center">Create an account</h3> <hr>
+                   <form action="/signup" method="POST">
+                    <h5>{{errorMessage}}</h5>
+                            <div class='form-group-icon mb15'>
+                                <i class='fa fa-user'></i>
+                                <input name="email" type="email" class='form-control' placeholder="Email" required>
+                            </div>
+                            <div class='form-group-icon mb15'>
+                                <i class='fa fa-envelope'></i>
+                                <input name="username" type="text" class='form-control' placeholder="Username" required>
+                            </div>
+                            <div class='form-group-icon mb15'>
+                                <i class='fa fa-lock'></i>
+                                <input name="pass" type="password" class='form-control' placeholder="Password" onchange='check_pass();' required id="password">
+                            </div>
+                            <div class='form-group-icon mb15'>
+                                <i class='fa fa-refresh'></i>
+                                <input name="confirm_pass" type="password" class='form-control' placeholder="Confirm Password" onchange='check_pass();' required id="confirm_password">
+                            </div>
+                            <script>function check_pass() {
+                                if (document.getElementById('password').value ==
+                                        document.getElementById('confirm_password').value) {
+                                    document.getElementById('submit').disabled = false;
+                                    
+                                } else {
+                                    document.getElementById('submit').disabled = true;
+                                }
+                            }</script>
+                            <div class="checkbox">
+                                <input name="terms" type="checkbox" id="tm" required>
+                                 <label for="tm">
+                                    Accept Terms & Conditions
+                                </label>
+                            </div>
+                            <input name="resgistration" type="submit" value="SignUp" class='btn btn-primary btn-lg btn-block' id="submit" disabled>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        {{>footer}}
+        <!-- jQuery-->
+        <script src="assets/js/plugins/all.js"></script>
+        <script src="assets/js/finder.custom.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

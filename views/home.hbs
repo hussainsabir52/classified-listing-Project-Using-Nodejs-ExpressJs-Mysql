@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        <title>{{title}}</title>
-                <link href="assets/css/bundle.css" rel="stylesheet">
-        <link href="assets/css/style.css" rel="stylesheet">
-    </header>
-</html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+              <title>{{title}}</title>
+        {{>linkrel}}
+        
+       </head>
 <body>
-    {{>header}}
+    <div id="preloader"></div>
+    {{>header headerOption}}
 
+    <div class="hero-form bg-parallax parallax-overlay"  data-jarallax='{"speed": 0.2}' style='background-image: url(assets/images/pexels-karol-d-325153.jpg)'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-7">
+                        <h1>Classified Listing</h1>
+                        <p class="mb20">Add and view listings without any hassle</p>                           
+                        <div class="hero-buttons">
+                            {{!-- <a href="#" class="btn btn-lg btn-white">Learn More</a> --}}
+                            <a href="/all" class="btn btn-lg btn-danger">Browse Listing</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1 col-sm-5">
+                        <div class="hero-search-form">
+                            <h3>Search Listings</h3>
+                            <hr>
+                            
+                                <div class="form-hero-group mb15">
+                                    <i class="fa fa-search"></i>
+                                    <input id="search_keyword" type="text" class="form-control" placeholder="Keywords...">
+                                </div>
+                                <div class="form-hero-group mb15">
+                                    <i class="fa fa-map-marker"></i>
+                                    <select id="search_loc" class="form-control" title="Location">                                    
+                                        {{#each location}}
+                                        <option value={{location_id}}>{{location_name}}</option>
+                                        {{/each}}
+                                    </select>
+                                </div>
+                                 <div class="form-hero-group mb15">
+                                    <i class="fa fa-folder"></i>
+                                    <select id="search_cat" class="form-control" title="Category">                                       
+                                         {{#each category}}
+                                        <option value={{category_id}}>{{category_name}}</option>
+                                        {{/each}}
+                                    </select>
+                                </div>
+                                 <div class="form-hero-group mb15">
+                                    <i class="fa fa-dollar"></i>
+                                    <input id="search_minprice" type="text" class="form-control" placeholder="Min Price...">
+                                </div>
+                                 <div class="form-hero-group mb15">
+                                    <i class="fa fa-dollar"></i>
+                                    <input id="search_maxprice" type="text" class="form-control" placeholder="Max Price...">
+                                </div>
+                                <input id="search_submit" type="submit" class="btn btn-dark btn-lg btn-block" value="Search" onclick="search()">
+                            
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row clients-row">
+                <div class="col-md-6 col-sm-6">
+                    <a href="#"><img src="assets/images/cl2.png" alt="" class="img-responsive"></a>
+                </div>
+                
+                
+                
+                <div class="col-md-6 col-sm-6">
+                    <a href="#"><img src="assets/images/cl5.png" alt="" class="img-responsive"></a>
+                </div>
+            </div>
+        </div>
+
+    {{>footer}}
+    
+<script src="assets/js/search.js"></script>
+<script>
+</script>
 </body>
+</html>

@@ -6,15 +6,15 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
 @font-face {
   font-family: 'FontAwesome';
-  src: url("assets/bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("assets/bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("../bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("assets/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot");
-  src: url("assets/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot");
+  src: url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 /*
 Template basic style
@@ -48,7 +48,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
-  font-weight: 600;
+  font-weight: 450;
   color: #333; }
 
 label {
@@ -287,7 +287,7 @@ div#preloader {
     height: 100%;
     left: 0;
     top: 0;
-    background: rgba(66, 103, 178, 0.9); }
+    background: rgba(66, 103, 178, 0.5); }
   .parallax-overlay .container {
     position: relative; }
 
@@ -433,7 +433,7 @@ Template intro hero styles
     color: rgba(255, 255, 255, 0.8); }
 
 .hero-search-form {
-  background-color: rgba(66, 103, 178, 0.7);
+  background-color: rgba(66, 103, 178, 0.9);
   padding: 30px 25px; }
   .hero-search-form h3 {
     font-weight: 300;
@@ -1374,3 +1374,228 @@ Footer style
     margin-top: 60px; }
   .how-work-card {
     text-align: center; } }
+
+    article {
+      width: 80%;
+      margin: auto;
+      margin-top: 10px;
+    }
+    
+    .thumbnail {
+      width: 200px;
+      height: 200px;
+      margin: 5px;
+      float: left;
+     
+    }
+
+    /* styling for remove button on upload images */
+
+    input[type="file"] {
+      display: block;
+    }
+    .imageThumb {
+      max-height: 100px;
+      width: 120px;
+      border: 2px solid;
+      padding: 1px;
+      cursor: pointer;
+      margin-bottom: 3px;
+    }
+    .pip {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+    }
+    .remove {
+      display: block;
+      background-color: #4267b2;
+      border: 1px solid #4267b2;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      padding: 0px 12px;
+      font-weight: 500;
+      font-size: 13px;
+    }
+    .remove:hover {
+      background: white;
+      border: 1px solid #4267b2;;
+      color: #4267b2;
+    }
+
+    /* register button on login */
+    .register{
+      text-decoration: underline;
+      color: #666666;
+      font-size: 90%;
+      float: left;
+      margin-top: -36px;
+      margin-left: 170px;
+    }
+
+    .register:hover{
+      color: #4267b2;
+    }
+
+    .register-text{
+      margin-top: 10px;
+    }
+
+    .card{
+      position: relative;
+      width: 250px;
+      height: 350px;
+      background: #dedede;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 30px;
+      display: inline-block;
+    }
+
+    .card::before{
+      content: '';
+      position: absolute;
+      top: 75%;
+      width: 100%;
+      height: 100%;
+      background: #88A0D3;
+      transform: skewY(334deg);
+      transition: 0.5s;
+    }
+
+    .card:hover::before{
+      transform: skewY(386deg);
+    }
+
+    .card .imgprod img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-width: 250px;
+      max-height: 250px;
+      transition: 0.5s;
+    }
+
+    .card:hover .imgprod img{
+      transform: scale(1.1);
+    }
+
+    .card .cardcon{
+      position: relative;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .form-inline{
+      display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    }
+
+    .search-form{
+      margin: 5px 10px 5px 25px;
+    }
+
+
+    /* SLIDER CSS */
+
+    {box-sizing: border-box}
+    .mySlides1, .mySlides2 {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      width: 5000px;
+      max-width: 10000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      /* position: absolute; */
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      /* font-size: 18px; */
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: -130px;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a grey background color */
+    .prev:hover, .next:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    .slideshow-container{
+      margin-left: 30px;
+      width: 70%;
+    }
+
+    .price_box{
+      padding: 15px;
+      margin-right: 30px;
+      border: 2px solid #ccc;
+      border-radius: 2px;
+    }
+
+    .price_box .prod-price{
+      color: #6283C5;
+    }
+
+    .price_box .prod-loc{
+      color: #8B8B8B;
+    }
+
+    .seller_box{
+      margin-top: 20px;
+      padding: 15px;
+      margin-right: 30px;
+      border: 2px solid #ccc;
+      border-radius: 2px;
+    }
+
+    .form-awsome{
+      display: flex;
+    }
+
+    .seller_box .seller-name{
+      margin-left: 10px;
+    }
+
+    .description-box{
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+      padding: 15px;
+      margin-right: 30px;
+      border: 2px solid #ccc;
+      border-radius: 2px;
+    }
+
+    .description-box .prod-des{
+      font-weight: bold;
+      color: #4267B2;
+    }
+
+    .des h4{
+      font-weight: 400px;
+    }
+
+  

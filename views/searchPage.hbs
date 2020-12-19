@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+              <title>Search-Listing</title>
+
+                {{>linkrel}}
+
+       
+       </head>
+    <body>
+<!-- Preloader -->
+<div id="preloader"></div>
+        <!-- Static navbar -->
+        {{>header headerOption}}
+        
+        <div class="page-bread mb70">
+            <div class="container">
+                <div class="row"></div>
+                                <form class="form-inline">
+                                    <div class="search-elem">
+                                        
+                                        <input id="search_keyword" type="text" class="search-form" placeholder="Keywords..." value={{keyword}}>
+                                    </div>
+                                    
+                                    <div class="search-elem">
+                                      
+                                        <select id="locdrop" class="search-form">                                       
+                                            {{#each locationdrop}}
+                                            <option value={{location_id}}>{{location_name}}</option>
+                                            {{/each}}
+                                        </select>
+                                    </div>
+                                     <div class="search-elem">
+                                      
+                                        <select id="catdrop" class="search-form">                                       
+                                            {{#each categorydrop}}
+                                        <option value={{category_id}}>{{category_name}}</option>
+                                        {{/each}}
+                                        </select>
+                                    </div>
+                                    <div class="search-elem">
+                                     
+                                        <input id="search_minprice" type="text" class="search-form" placeholder="Min Price..." value={{min}}>
+                                    </div>
+                                     <div class="search-elem">
+                                     
+                                        <input id="search_maxprice" type="text" class="search-form" placeholder="Max Price..." value={{max}}>
+                                    </div>
+                                </form>
+                                    <input id="search_submit" type="submit" class="btn btn-lg btn-block" value="Search" onclick="search()">
+
+                            </div>
+                        
+                   
+                    
+                
+            </div>
+        </div>
+
+
+        <div class="cards">
+
+    {{#each results}}
+    <a href="#">
+        <div class="card">
+            <div class="imgprod">
+                <img src="/pictures/{{listing_id}}/0.jpg" alt="" class="card-img-top" onerror="this.style.display='none'">
+                <img src="/pictures/{{listing_id}}/0.png" alt="" class="card-img-top" onerror="this.style.display='none'">
+                <div class="cardcon">
+                    <h3 class="title">{{listing_name}}</h3>
+                    <h6 class="location">{{location_name}}</h6>
+                    <h4 class="price">Rs. {{listing_price}}</h4>
+                    <p class="description">{{listing_desc}}</p>
+                </div>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+   
+        </div>
+
+       <!--footer-->
+        {{>footer}}
+        <!-- jQuery-->
+
+        {{!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8VMR9FooFZN64_qR8pu0jY0NJ8j_sicE&libraries=places&callback=initAutocomplete" --}}
+        {{!-- async defer></script> --}}
+        
+     <script>
+         $(document).ready(()=>{ 
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const locid = urlParams.get('loc');
+            const catid = urlParams.get('category');
+            console.log(locid);
+            console.log(catid);
+            
+            //{{!-- $("#locdrop").val(locid);  --}}
+            //$("#select option[value="+locid+"]").attr('selected', 'selected');
+        $("#locdrop").val(locid).change();
+        $("#catdrop").val(catid).change();
+       
+        });
+
+        const search = function(){
+    var keyword=$('#search_keyword').val();
+    var location=$('#locdrop').val();
+    var category=$('#catdrop').val();
+    var minprice=$('#search_minprice').val();
+    var maxprice=$('#search_maxprice').val();
+
+    var UrlSearch='/search?k='+keyword+'&loc='+location+'&category='+category+'&min='+minprice+'&max='+maxprice;
+    window.location=UrlSearch;
+
+}
+     </script>
+    </body>
+</html>
